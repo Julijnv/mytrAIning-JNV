@@ -1,0 +1,40 @@
+.us_section .question select {
+    -webkit-appearance: none; /* Remueve la apariencia por defecto en Chrome y Safari */
+    -moz-appearance: none; /* Remueve la apariencia por defecto en Firefox */
+    appearance: none; /* Remueve la apariencia por defecto */
+    background-color: transparent;
+    border: 1px solid rgba(255,74,86,1);
+    border-radius: 60px;
+    padding: 10px 15px;
+    width: calc(100% - 30px); /* ajusta el ancho para el padding y bordes */
+    font-size: 17px;
+    color: rgba(255,74,86,1);
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    transition: all 0.25s cubic-bezier(.53,.01,.35,1.5);
+    margin-top: 30px; /* ajusta según tu diseño */
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  
+
+  
+  .us_section .question select:focus {
+    background: rgba(255,74,86,1);
+    color: white;
+  }
+  
+  
+  
+  /* Esconde la flecha por defecto que aparece en IE */
+  .us_section .question select::-ms-expand {
+    display: none;
+  }
+  

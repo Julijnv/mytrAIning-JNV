@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>mytrAIning</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/dropdown.css" rel="stylesheet" />
+  
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/home">
+            <span>
+              mytrAIning
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/home"> Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/predictor"> Predictor </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout"> Cerrar sesión </a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- Us section -->
+
+  <section class="us_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Elige tu rutina
+        </h2>
+      </div>
+      <form id="routine-form">
+      <div class="us_container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <label class="selectable-box">
+              <input type="radio" name="rutinaID" value="0" class="routine-radio" />
+              <div class="detail-box">
+                <h5><strong>Completa</strong></h5>
+                <p>
+                  Rutina de ejercicios para fortalecer todos los grupos musculares
+                </p>
+              </div>
+            </label>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <label class="selectable-box">
+              <input type="radio" name="rutinaID" value="1" class="routine-radio" />
+              <div class="detail-box">
+                <h5><strong>Espalda</strong></h5>
+                <p>
+                  Rutina de ejercicios para ejercitar los músculos de la espalda
+                </p>
+              </div>
+            </label>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <label class="selectable-box">
+              <input type="radio" name="rutinaID" value="2" class="routine-radio" />
+              <div class="detail-box">
+                <h5><strong>Pecho</strong></h5>
+                <p>
+                  Rutina de ejercicios para ejercitar los músculos del pecho
+                </p>
+              </div>
+            </label>
+          </div>
+          <div class="us_container ">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <label class="selectable-box">
+                  <input type="radio" name="rutinaID" value="3" class="routine-radio" />
+                  <div class="detail-box">
+                    <h5><strong>Hombro</strong></h5>
+                    <p>
+                      Rutina de ejercicios para ejercitar los músculos del hombro
+                    </p>
+                  </div>
+                </label>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <label class="selectable-box">
+                  <input type="radio" name="rutinaID" value="4" class="routine-radio" />
+                  <div class="detail-box">
+                    <h5><strong>Brazo</strong></h5>
+                    <p>
+                      Rutina de ejercicios para ejercitar los músculos del brazo
+                    </p>
+                  </div>
+                </label>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <label class="selectable-box">
+                  <input type="radio" name="rutinaID" value="5" class="routine-radio" />
+                  <div class="detail-box">
+                    <h5><strong>Pierna</strong></h5>
+                    <p>
+                      Rutina de ejercicios para ejercitar los músculos de las piernas
+                    </p>
+                  </div>
+                </label>
+              </div>
+        </div>
+        <div class="heading_container">
+          <h2>
+            Información adicional
+          </h2>
+        </div>
+        
+        <div class="question">
+          <select name="Gender" id="Gender" required>
+            <option value="" disabled selected>Género</option>
+            <option value="0">Masculino</option>
+            <option value="1">Femenino</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <select name="FAF" id="FAF" required>
+            <option value="" disabled selected>¿Con qué frecuencia entrenas?</option>
+            <option value="1">Nada</option>
+            <option value="2">1-2 días a la semana</option>
+            <option value="3">3-5 días a la semana</option>
+          </select>
+        </div>
+    
+        <div class="question">
+          <input type="text" name="Age" required autocomplete="off"/>
+          <label for="Edad">Edad</label>
+        </div>
+        <div class="question">
+          <input type="text" name="Weight" required autocomplete="off"/>
+          <label for="weight">Peso(Números redondos)</label>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="container">
+      
+    
+      <!-- Botón de submit -->
+      <div class="submit-container">
+        <button type="submit" class="submit-button">Continuar</button>
+      </div>
+    </div>
+    
+    <div class="content">
+      
+      <div class="content__container">
+        <ul class="content__container__list" id="results-list">
+          <!-- Los resultados se insertarán aquí -->
+        </ul>
+      </div>
+    </div>
+    
+
+    
+   
+    
+  </section>
+</form>
+
+
+
+
+  <!-- end us section -->
+
+
+ 
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/predictor.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
